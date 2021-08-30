@@ -191,8 +191,6 @@ class testLogin {
       cy.wait(2000)
      }
 
-
-
 }
 
 
