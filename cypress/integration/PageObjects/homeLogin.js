@@ -144,7 +144,7 @@ class testLogin {
      }
 
      confirma() {
-        cy.get('a > button').click()
+        cy.get('a > button').click({force: true})
      }
 
      verifica3() {
@@ -180,11 +180,15 @@ class testLogin {
      }
 
      anexarCv() {
-        cy.get('#my_file').click()
+        cy.get('#my_file').click({force: true})
      }
 
-     confirm() {
-        cy.get('button').should('contain', 'Candidatar-se').click()
+     confir() {
+        cy.get('button').should('contain', 'Candidatar-se').click({force: true})
+     }
+
+     timeout(){
+      cy.wait(2000)
      }
 
 

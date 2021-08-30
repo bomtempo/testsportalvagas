@@ -10,8 +10,8 @@ import homeLogin from './PageObjects/homeLogin'
 
 const Home = new homeLogin()
 
-describe.only('Teste De Portal De Vagas', () => {
-    it.only('Teste De Login', () => {
+describe('Teste De Portal De Vagas', () => {
+    it('Teste De Login', () => {
         
         Home.visita()
         Home.verifyTitle()
@@ -83,6 +83,7 @@ describe.only('Teste De Portal De Vagas', () => {
         Home.verifica()
         Home.canditatar()
         Home.verifica2()
+        Home.timeout()
         Home.confirma()
         Home.verifica3()
         Home.nomeCompleto()
@@ -93,7 +94,7 @@ describe.only('Teste De Portal De Vagas', () => {
         Home.msg()
         Home.verificaCv()
         Home.anexarCv()
-        Home.confirm()
+        Home.confir()
         
     });
     
